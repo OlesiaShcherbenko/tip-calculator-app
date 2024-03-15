@@ -1,15 +1,24 @@
 //import { useState } from 'react'
 import logo from './assets/logo.svg'
-//import viteLogo from '/vite.svg'
 import './App.scss'
+import Input from './components/Input'
 
 function App() {
 
   return (
     <>
-    <img src={logo} alt="" />
+      <img src={logo} alt="" className='logo'/>
       <div className='app'>
-        <p>Hello</p>
+        <div className='input'>
+          <div className='bill'>
+            <p>Bill</p>
+            <Input></Input>
+          </div>
+          <p>Select Tip %</p>
+          <p>Number of People</p>
+          <Input></Input>
+        </div>
+        <div className='output'></div>
       </div>
     </>
   )
