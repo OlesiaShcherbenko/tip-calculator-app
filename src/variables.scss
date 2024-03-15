@@ -1,0 +1,19 @@
+@use 'utils' as u;
+
+$color-background: hsl(185, 41%, 84%);
+$color-white: hsl(0, 0%, 100%);
+$color-accente: hsl(172, 67%, 45%);
+$color-text: hsl(186, 14%, 43%);
+$color-text-secondary: hsl(184, 14%, 56%);
+$color-input: hsl(189, 41%, 97%);
+$color-icon: hsl(184, 19%, 68%);
+
+$font-xs: u.rem(13);
+$font-s: u.rem(16);
+$font-m: u.rem(20);
+$font-l: u.rem(24);
+$font-lx: clamp(
+    u.rem(32)
+    1.647887323943662rem + 1.5023474178403755vw, 
+    u.rem(48)
+);
