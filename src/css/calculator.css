@@ -1,0 +1,32 @@
+/* #region Styles for Mobile devices */
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  min-height: 70vh;
+  padding: 32px;
+  background-color: var(--c-background-secondary);
+  border-radius: 25px 25px 0px 0px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--c-input-background);
+  color: var(--c-text-secondary);
+  font-size: 16px;
+}
+/* #endregion */
+
+/* #region Styles for Tablet & Desktop devices */
+@media only screen and (min-width: 768px) {
+  .calculator {
+    max-width: 920px;
+    height: auto;
+    border-radius: 25px;
+  }
+}
+/* #endregion */
