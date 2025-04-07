@@ -1,0 +1,21 @@
+/* #region Styles for Mobile devices */
+.header {
+  margin-top: 48px;
+  margin-bottom: 40px;
+}
+
+a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* #endregion */
+
+/* #region Styles for Tablet & Desktop devices */
+@media only screen and (min-width: 768px) {
+  .header {
+    margin-top: 160px;
+    margin-bottom: 80px;
+  }
+}
+/* #endregion */
