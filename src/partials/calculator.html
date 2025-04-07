@@ -1,43 +1,55 @@
 <section>
   <div class="container">
-    <form class="calculator">
-      <label>
-        Bill
-        <br>
-        <!-- <svg>
-            <use href="./img/icons.svg#icon-dollar"></use>
-        </svg> -->
-        <input type="text" placeholder="0"
-      /></label>
-      <label>
-        Select Tip %
-        <br>
-        <button>5%</button>
-        <button>10%</button>
-        <button>15%</button>
-        <button>25%</button>
-        <button>50%</button>
-        <input type="text" placeholder="Custom" />
-      </label>
-      <label
-        >Number of People
-        <br>
-        <!-- <svg>
-            <use href="./img/icons.svg#icon-people"></use>
-        </svg> -->
-        <input type="text" placeholder="0" />
-      </label>
-      <div>
-        <div>
-          <p>Tip Amount <span>/ person</span></p>
-          <p>$0.00</p>
+    <div class="calculator">
+      <form class="calculator-input">
+        <label class="input-wrapper">
+          Bill
+          <!-- <br /> -->
+          <!-- <svg>
+              <use href="./img/icons.svg#icon-dollar"></use>
+          </svg> -->
+          <input type="text" placeholder="0"
+        /></label>
+        <label>
+          Select Tip %
+          <!-- <br /> -->
+          <div class="tip-buttons">
+            <button class="tip">5%</button>
+            <button class="tip">10%</button>
+            <button class="tip">15%</button>
+            <button class="tip">25%</button>
+            <button class="tip">50%</button>
+            <input class="custom-tip" type="text" placeholder="Custom" />
+          </div>
+        </label>
+        <label class="input-wrapper"
+          >Number of People
+          <!-- <br /> -->
+          <!-- <svg>
+              <use href="./img/icons.svg#icon-people"></use>
+          </svg> -->
+          <input type="text" placeholder="0" />
+        </label>
+      </form>
+      <div class="calculator-result">
+        <div class="text-wrapper">
+          <div class="tip-amount">
+            <p>
+              Tip Amount <br />
+              <span class="text-secondary">/ person</span>
+            </p>
+            <p class="output">$0.00</p>
+          </div>
+          <div class="total">
+            <p>
+              Total <br />
+              <span class="text-secondary">/ person</span>
+            </p>
+            <p class="output">$0.00</p>
+          </div>
         </div>
-        <div>
-          <p>Total <span>/ person</span></p>
-          <p>$0.00</p>
-        </div>
-        <button type="reset">Reset</button>
+        <button class="btn-reset" type="reset">Reset</button>
       </div>
-    </form>
+    </div>
   </div>
 </section>

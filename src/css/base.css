@@ -4,14 +4,19 @@
   font-weight: 700;
 
   color: var(--c-text-primary);
-  background-color: var(--c-background-primary);
+  background-color: var(--c-bg-primary);
 
-  --c-background-primary: #c5e4e7;
-  --c-background-secondary: #ffffff;
-  --c-input-background: #F3F9FA;
+  --c-bg-primary: #c5e4e7;
+  --c-bg-secondary: #ffffff;
+  --c-bg-result: #00474b;
+  --c-bg-button: #00474b;
+  --c-bg-input: #f3f9fa;
   --c-text-primary: #5e7a7d;
-  --c-text-secondary: #00474B;
-  --c-shadow-light: #4fa6ae33;
+  --c-text-secondary: #ffffff;
+  --c-text-tertiary: #547878;
+  --c-text-input: #00474b;
+  --c-placeholder: rgba(0, 71, 75, 0.35);
+  --c-shadow: rgba(79, 166, 175, 0.20);
   --c-accent: #26c0ab;
   --c-green-dark: #00494d;
 }
