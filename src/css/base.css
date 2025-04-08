@@ -16,7 +16,7 @@
   --c-text-tertiary: #547878;
   --c-text-input: #00474b;
   --c-placeholder: rgba(0, 71, 75, 0.35);
-  --c-shadow: rgba(79, 166, 175, 0.20);
+  --c-shadow: rgba(79, 166, 175, 0.2);
   --c-accent: #26c0ab;
   --c-green-dark: #00494d;
 }
@@ -24,7 +24,14 @@
 body {
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
   min-height: 100vh;
-  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    gap: 80px;
+  }
 }
