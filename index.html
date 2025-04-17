@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/tip-calculator-app/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/tip-calculator-app/assets/index-Zvid8Vdw.css">
+    <link rel="stylesheet" crossorigin href="/tip-calculator-app/assets/index-BgOcIve-.css">
   </head>
   <body>
     <header class="header">
@@ -30,21 +30,23 @@
         <label class="input-wrapper">
           Bill
           <!-- <br /> -->
-          <!-- <svg>
-              <use href="./img/icons.svg#icon-dollar"></use>
-          </svg> -->
-          <input type="text" placeholder="0"
-        /></label>
+          <div class="input-icon-wrapper">
+            <svg class="icon-dollar">
+              <use href="/tip-calculator-app/assets/icons-uXZHLVsf.svg#icon-dollar"></use>
+            </svg>
+            <input id="bill" type="number" placeholder="0" />
+          </div>
+        </label>
         <label>
           Select Tip %
           <!-- <br /> -->
           <div class="tip-buttons">
-            <button class="tip">5%</button>
-            <button class="tip">10%</button>
-            <button class="tip">15%</button>
-            <button class="tip">25%</button>
-            <button class="tip">50%</button>
-            <input class="custom-tip" type="text" placeholder="Custom" />
+            <button class="tip-btn" data-tip="5">5%</button>
+            <button class="tip-btn" data-tip="10">10%</button>
+            <button class="tip-btn" data-tip="15">15%</button>
+            <button class="tip-btn" data-tip="25">25%</button>
+            <button class="tip-btn" data-tip="50">50%</button>
+            <input id="custom-tip" type="number" placeholder="Custom" />
           </div>
         </label>
         <label class="input-wrapper"
@@ -53,28 +55,28 @@
           <!-- <svg>
               <use href="./img/icons.svg#icon-people"></use>
           </svg> -->
-          <input type="text" placeholder="0" />
+          <input id="people" type="number" placeholder="0" />
         </label>
       </form>
-      <div class="calculator-result">
+      <section class="calculator-result">
         <div class="text-wrapper">
           <div class="tip-amount">
             <p>
               Tip Amount <br />
               <span class="text-secondary">/ person</span>
             </p>
-            <p class="output">$0.00</p>
+            <p id="tip-per-person" class="output">€ 0.00</p>
           </div>
           <div class="total">
             <p>
               Total <br />
               <span class="text-secondary">/ person</span>
             </p>
-            <p class="output">$0.00</p>
+            <p id="total-per-person" class="output">€ 0.00</p>
           </div>
         </div>
-        <button class="btn-reset" type="reset">Reset</button>
-      </div>
+        <button id="reset" class="btn-reset" type="reset">Reset</button>
+      </section>
     </div>
   </div>
 </section>
