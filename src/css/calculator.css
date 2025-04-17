@@ -39,6 +39,21 @@ input::placeholder {
   font-size: 24px;
 }
 
+.icon-dollar {
+  position: absolute;
+  color: var(--c-text-secondary);
+  top: calc(50% + 6px);
+  left: 20px;
+  width: 10px;
+  height: 16px;
+  transform: translateY(-50%);
+}
+
+.input-icon-wrapper {
+  position: relative;
+  
+}
+
 /* .input-wrapper::before {
   content: "$";
   position: absolute;
@@ -55,7 +70,7 @@ input::placeholder {
   margin-top: 16px;
 }
 
-.tip {
+.tip-btn {
   width: 146px;
   height: 48px;
   color: var(--c-text-secondary);
@@ -66,13 +81,13 @@ input::placeholder {
   background-color: var(--c-bg-button);
 }
 
-.tip-buttons .custom-tip {
+.tip-buttons #custom-tip {
   width: 146px;
   margin-top: 0;
   color: var(--c-text-input);
 }
 
-.custom-tip::placeholder {
+#custom-tip::placeholder {
   color: var(--c-text-tertiary);
 }
 
@@ -148,7 +163,7 @@ input::placeholder {
     padding: 40px;
   }
 
-  .tip {
+  .tip-btn {
     width: 117px;
   }
 
@@ -157,7 +172,7 @@ input::placeholder {
     margin-top: 8px;
   }
 
-  .tip-buttons .custom-tip {
+  .tip-buttons #custom-tip {
     width: 117px;
   }
 

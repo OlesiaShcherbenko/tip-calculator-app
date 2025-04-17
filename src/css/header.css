@@ -9,3 +9,11 @@ a {
   align-items: center;
 }
 /* #endregion */
+
+/* #region Tablet & Desktop devices */
+@media only screen and (min-width: 768px) {
+  .header {
+    margin-top: 0;
+  }
+}
+/* #endregion */
